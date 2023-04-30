@@ -1,4 +1,4 @@
-package dev01
+package accuratetime
 
 import (
 	"fmt"
@@ -6,8 +6,8 @@ import (
 	"os"
 )
 
-func Main() {
-	time, err := ntp.Time("0.beevik-ntp.pool.ntp")
+func GetTime() {
+	time, err := ntp.Time("0.beevik-ntp.pool.ntp.org")
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "error getting time from ntp pool: %v\n", err)
 		os.Exit(1)

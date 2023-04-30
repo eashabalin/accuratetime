@@ -1,4 +1,4 @@
-package dev01
+package accuratetime
 
 /*
 === Базовая задача ===
